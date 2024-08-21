@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/Logo.png" alt="Logo-Alura">
+    </header>
+    <main >
+        <section class="entrada">
+            <textarea class="texto_encriptar" placeholder="Ingrese el texto aqui" ></textarea>
+            <div class="informacion">
+                <img class="informacion_logo" src="/img/exclamation.png"  alt="exclamation">
+                <h2 class="informacion_texto">Solo letras minúsculas y sin acentos</h2>
+            </div>
+            <div class="botones">
+                <button class="boton_encriptar mainButton" onclick="btnencriptar()">Encriptar</button>
+                <button class="boton_desencriptar mainButton" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <textarea class="texto_desencriptar" ></textarea>
+            <div class="resultado__informacion">
+                <p class="resultadoTexto1" >Ningún mensaje fue encontrado</p>
+                <p class="resultadoTexto2" >Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="resultado_btn_copiar">
+                <button class="boton_copiar mainButton" onclick="btncopiar();" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="firma">
+          &copy; 2024 Elaborado por <a href="www.linkedin.com/in/luisruiz1896" target="_blank" class="footer_linkedin"> LUIS URREA</a>
+        </p>
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+</html>

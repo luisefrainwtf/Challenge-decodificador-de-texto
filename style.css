@@ -1,0 +1,251 @@
+*{
+    background-color: #D8DFE8;
+    font-family: "Inter", sans-serif;
+    font-weight:400;
+    font-size: 1rem;;
+}
+
+
+
+.logo{
+    padding: 1%;
+    width: auto;
+    margin-left: 10px;
+    width: 5%;
+}
+
+main{
+    display: flex;
+    margin-left: 4%;
+}
+
+.texto_encriptar{
+    border: none;
+    text-transform: lowercase;
+    margin-top: 2%;
+    outline: none;
+    color: #0A3871;
+    margin-left: 5%;
+    resize: none;
+    width: 90%;
+    height: 80%;
+    font-size: 1.3rem;
+
+    
+}
+
+::placeholder{
+    font-size: 1.8rem;
+    color: green;
+   
+}
+
+.texto_desencriptar{
+    background-image: url(/img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: #0A3871;
+    margin-top: 2%;
+    margin-left: 3%;
+    border-radius: 2%;
+    width: 60%;
+    height: 80vh;
+    font-size: 1.3rem;
+
+}
+
+.botones{
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    gap: 3%;
+}
+
+.boton_encriptar{
+    width: 328px;
+    background-color: #0A3871;
+    color: white;
+    padding: 2%;
+    border: 1px #0A3871;
+    border-radius: 24px;
+    font-size: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boton_desencriptar{
+    width: 328px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 2%;
+    border-radius: 24px;
+    font-size: 1rem;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.boton_copiar{
+    width: 328px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 4%;
+    border-radius: 24px;
+    font-size: 1rem;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.informacion{
+    display: flex;
+    gap: 10px;
+}
+.informacion_texto{
+    color: #495057;
+    font-size: 0.6rem;
+}
+.informacion_logo{
+    width: 2.5%;
+    height: 2.5%;
+    margin-left: 2rem;
+
+}
+
+.resultado{
+
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: -1px 1px 15px 0.6px #e0e3f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resultado_btn_copiar{
+    background-color: white;
+    
+}
+
+.resultado__informacion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+
+}
+
+.resultadoTexto1{
+    background-color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 15%;
+    color: #343A40;
+}
+  
+.resultadoTexto2{
+    background-color: white;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #495057;
+}
+
+
+
+.footer {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a3871;
+    text-decoration: none;
+}
+  
+.firma {
+    color: #fff;
+    background-color: #0a3871;
+    font-size: 0.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+  
+.footer_linkedin{
+    background-color: #0a3871;
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+/* ============= diseño responsive ============= */
+@media (max-width: 770px) {
+    main {
+        margin: 5% 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .entrada{
+        padding: 2% 0% 5% 2%;
+    }
+  
+    .texto_desencriptar{
+        width: 80%;
+        height: 50vh;
+
+    }
+    .texto_encriptar{
+        width: 80%;
+        height: 40vh;
+        
+    }
+
+    
+    .resultado{
+        width: 100%;
+        height: 40%;
+        padding: 2% 2%;
+    }
+
+  }
+  
+  @media (max-width: 380px) {
+    
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+ 
+    .boton_copiar {
+        padding: 2% 25%;
+    }
+    .boton_encriptar {
+        padding: 2% 25%;
+    }
+    .entrada{
+        padding: 2% 0% 5% 2%;
+    }
+    .resultado{
+        width: 150%;
+        height: 50%;
+    }
+
+    .texto_desencriptar{
+        padding: 1% 10%;
+    }
+
+    .texto_encriptar{
+        padding: 1% 10%;
+
+    }
+
+
+  
+  }
